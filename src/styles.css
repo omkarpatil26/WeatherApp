@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    height: 80vh;
+    background-color: rgb(132, 0, 255);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
+}
+.upper-data{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.lower-data{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-data img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.weatherData{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 3); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.location{
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+}
+.temperature{
+    color: black;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 900;
+}
+.moreInfoLabel{
+    color: aliceblue;
+
+}
+.moreInfoContainer{
+    flex: 1;
+    background-color: grey;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.infoBlock{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.infoBlockLabel{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infoBlockLabel img{
+    width: 1.5em;
+}
+.infoBlockLabel span{
+    color: aliceblue;
+    font-size: 0.8em;
+}
+.infoBlockValue{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: aliceblue;
+}
